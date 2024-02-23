@@ -3,6 +3,7 @@ Replay script for sending log files into Graylog
 
 # Usage
 
+```
 log_sender.py [-h] [-s SERVER] [-p PORT] [-u] [-d [0-1000]] [-l LINES] [-c] [-r] [-w] [-m MESSAGE | -f FILE]
 
 A program for sending arbitrary syslog messages to a Graylog server using TCP. This can be used to test any Input built on Raw or Syslog TCP such as Palo Alto.
@@ -26,3 +27,4 @@ options:
 
 You must provide either a message or an input file. Note that when using -w/--wrap that -l/--lines cannot be set to 0, and the line count will be set to 1000 by
 default.
+```
